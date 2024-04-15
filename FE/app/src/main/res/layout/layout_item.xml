@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-15dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/vuongmien"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <com.example.tracnghiem.CustomTextView.GS
+            android:id="@+id/diemso_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="điểm"
+            android:textSize="20dp"
+            android:paddingTop="50dp"
+            android:background="@drawable/bgdanhsach"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/anhdaidien"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/anhdaidien"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:elevation="15dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

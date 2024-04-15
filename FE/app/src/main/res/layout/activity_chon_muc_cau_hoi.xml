@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image1"
+    >
+
+    <com.example.tracnghiem.CustomTextView.GS
+        android:id="@+id/ten_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Chọn Mức Độ"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFF"
+        />
+
+    <Button
+        android:id="@+id/de"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_button"
+        android:text="DỄ"
+        android:textColor="#FFF"
+        android:elevation="30dp"
+
+        />
+    <Button
+        android:id="@+id/trungbinh"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="TRUNG BÌNH"
+        android:textColor="#FFF"
+        android:background="@drawable/bg_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:elevation="30dp"
+        />
+    <Button
+        android:id="@+id/kho"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="KHÓ"
+        android:textColor="#FFF"
+        android:background="@drawable/bg_button"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:elevation="30dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/anhdaidien"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/dai2"
+        android:elevation="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        />
+    <TextView
+        android:id="@+id/diem_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 điểm"
+        android:textSize="30dp"
+        android:textColor="#FFF"
+        android:layout_below="@+id/anhdaidien"
+        android:layout_alignParentRight="true"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kho"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageButton
+            android:id="@+id/xemthuhang"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_button"
+            android:elevation="30dp"
+            android:src="@drawable/start"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem hạng"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</RelativeLayout>

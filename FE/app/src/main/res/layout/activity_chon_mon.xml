@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ChonMon"
+    android:background="@drawable/bgchonmon"
+    >
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/ctdlgt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Cấu trúc dữ liệu và giải thuật"
+            android:background="@drawable/bgdanhsach"
+            android:textColor="#FFF"
+            />
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/ktpm"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Kiểm thử phần mềm"
+            android:background="@drawable/bgdanhsach"
+            android:textColor="#FFF"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout"
+        android:id="@+id/btndangxuat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:background="@drawable/bgdanhsach"
+        android:textColor="#FFF"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ôn thi trắc nghiệm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoa CNTT - SDU"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

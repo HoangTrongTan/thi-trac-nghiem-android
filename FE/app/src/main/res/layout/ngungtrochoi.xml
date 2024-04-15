@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:elevation="20dp"
+    android:background="@drawable/bg_3"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/nhacnhien"
+        android:layout_gravity="center"
+        android:elevation="15dp"
+        />
+    <com.example.tracnghiem.CustomTextView.GS
+        android:id="@+id/thongbao"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc muốn thoát !"
+        android:textColor="#6212EF"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:elevation="15dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/tiep"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tiếp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_left"
+            />
+        <Button
+            android:id="@+id/venha"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_right"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:elevation="20dp"
+    android:background="@drawable/bg_3"
+    >
+    <com.example.tracnghiem.CustomTextView.GS
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tạo tài khoản"
+        android:gravity="center"
+        android:background="@drawable/top_bg"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/anh_user"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/mayanh"
+        android:scaleType="centerCrop"
+        android:background="#FFF"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/txtlayout_name"
+        android:layout_width="270dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:hint="Name"
+        app:helperTextTextColor="#E66666"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/persion"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayout_taikhoan"
+        android:layout_width="270dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Tài khoản"
+        app:helperTextTextColor="#E66666"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/account"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_taikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayout_matkhau"
+        android:layout_width="270dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Mật khẩu"
+        app:helperTextTextColor="#E66666"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/lock"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_matkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/btn_tao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo"
+            android:layout_weight="1"
+            android:background="@drawable/btn_left"
+            />
+        <Button
+            android:id="@+id/btn_thoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:layout_weight="1"
+            android:background="@drawable/btn_right"
+
+            />
+    </LinearLayout>
+</LinearLayout>

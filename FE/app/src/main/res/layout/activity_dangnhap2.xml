@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nendagnha"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logosaodo"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+        <com.example.tracnghiem.CustomTextView.PR
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Ôn thi"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#036107"
+            android:layout_marginLeft="30dp"
+            />
+        <com.example.tracnghiem.CustomTextView.PR
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Trắc nghiệm"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#036107"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_layout_account"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:hint="Account"
+            app:helperTextTextColor="#ED6868"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/persion"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_account"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ED920C"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_layout_pass"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:hint="Pass"
+            app:startIconDrawable="@drawable/lock"
+            app:helperTextTextColor="#ED6868"
+            app:endIconMode="password_toggle"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_pass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ED920C"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btn_vao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+                />
+            <Button
+                android:id="@+id/btn_dangki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

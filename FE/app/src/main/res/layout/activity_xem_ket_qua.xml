@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.XemKetQua">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/xemketqua">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/anhdaidienn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="130dp"
+            android:src="@drawable/anhdaidien"
+            android:textColor="#9D71EC" />
+
+        <com.example.tracnghiem.CustomTextView.GS
+            android:id="@+id/diemtong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="300dp"
+            android:text="Điểm của bạn: 50"
+            android:textColor="#9D71EC"
+            android:textSize="20dp" />
+
+        <com.example.tracnghiem.CustomTextView.GS
+            android:id="@+id/SoCauTraLoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="350dp"
+            android:text="Số câu trả lời đúng: 3"
+            android:textColor="#9D71EC"
+            android:textSize="20dp" />
+        <com.example.tracnghiem.CustomTextView.GS
+            android:id="@+id/Tong_tg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="400dp"
+            android:text="Tổng thời gian"
+            android:textColor="#9D71EC"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Trangchu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="480dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/bg_button"
+            android:text="Trang chủ"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/XemHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="480dp"
+            android:layout_marginRight="183dp"
+            android:background="@drawable/bg_button"
+            android:padding="5dp"
+            android:text="Xem thứ hạng"
+            android:textAllCaps="false"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>
